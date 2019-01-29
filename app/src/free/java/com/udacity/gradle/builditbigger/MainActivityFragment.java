@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.lib.MyClass;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -19,6 +18,7 @@ public class MainActivityFragment extends Fragment {
 
     public MainActivityFragment() {
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MainActivityFragment extends Fragment {
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .build();
 //        Log.v("hello",adRequest.getContentUrl());
-        Log.v("hellohellohellohello",AdRequest.DEVICE_ID_EMULATOR);
+        Log.v("hellohellohellohello", AdRequest.DEVICE_ID_EMULATOR);
         mAdView.loadAd(adRequest);
         return root;
     }
